@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog Portal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/profile.css">
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+  
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">Blog Portal</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="post"><a href="/compose">POST</a></li>
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT</a></li>
+          <li id="contact"><a href="/contact">CONTACT</a></li>
+          <li id="register"><a href="/logout">Logout</a></li>
+         
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+   =
+
+    
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="card p-3">
+        <div class="d-flex align-items-center">
+            <div class="image"> <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" class="rounded" width="155"> </div>
+            <div class="ml-3 w-100">
+                <h4 class="mb-0 mt-0"></h4><%=user.name%><span></span>
+                <div class="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
+                    <div class="d-flex flex-column"> <span class="articles">Email</span> <span class="number1"><%=user.email%></span> </div>
+                    <div class="d-flex flex-column"> <span class="followers">Followers</span> <span class="number2">980</span> </div>
+                    <div class="d-flex flex-column"> <span class="rating">Rating</span> <span class="number3">8.9</span> </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-padding"></div>
+  <div class="footer">
+    <p></p>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

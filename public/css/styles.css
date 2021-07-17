@@ -17,7 +17,7 @@ html {
     letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
-    color: #1abc9c !important;
+    color: pink !important;
 }
 
 .footer-padding {
