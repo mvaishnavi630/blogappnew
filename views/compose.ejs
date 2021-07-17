@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">DAILY JOURNAL</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li id="post"><a href="/compose">POST</a></li>
+          <li id="home"><a href="/">HOME</a></li>
+          <li id="about"><a href="/about">ABOUT US</a></li>
+          <li id="contact"><a href="/contact">CONTACT US</a></li>
+          <li id="register"><a href="/logout">Logout</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name="postTitle">
+        <label>Post</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Publish</button>
+    </form>
+
+<%- include("partials/footer"); -%>

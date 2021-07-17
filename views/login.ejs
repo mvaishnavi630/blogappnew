@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Daily Journal</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">DAILY JOURNAL</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+         
+          <li id="login"><a href="/login">LOGIN</a></li>
+          <li id="register"><a href="/register">REGISTER</a></li>
+        
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+<h1> Login </h1>
+
+<form action="/login" method="POST">
+<div>
+<label for="email">Email</label>
+<input
+type="email"
+name="email"
+placeholder="Enter Email"
+/>
+</div>
+<div>
+    <label for="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      placeholder="Enter Password"
+    />
+  
+</div>
+<button type="submit" class="btn btn-primary btn-block">Login</button>
+   
+</form>
+
+<%- include("partials/footer"); -%>
+
