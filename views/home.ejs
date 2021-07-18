@@ -8,6 +8,26 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/home.css">
+
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container1 {
+      padding: 2px 16px;
+    }
+    </style>
+
+  </head>
+
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -25,18 +45,32 @@
   </nav>
 
   <body>
-    <div class="container">
+    
+
+<div class="container">
+
+      
     <h1>Home of <%=user.name%> </h1>
   <%  posts.forEach(function(post){ %>
-    <div class="col-md-10 blogShort">
-      <h1><%=post.title%>               Created by : <span>  <%=post.username%> </span> </h1> 
+    <div class="card">
+      <div class="container1">
+        <br>
+        <button type="button" class="btn btn-warning">Title : </button> &nbsp;&nbsp;<button type="button" class="btn btn-light"><%=post.title%></button>
+      <br>
+      <article><p>
+        <br>
+      <button type="button" class="btn btn-warning">Blog Created by : </button> &nbsp;&nbsp;<a class="btn btn-info" href="/profile/<%=post.username%>"><%=post.username%></a>
+    </p></article>
+    <br>
           <article><p>
-            <%=post.content.substring(0, 100) + " ..."%>
-           
+            
+            <button type="button" class="btn btn-success">  <a href="/posts/<%=post._id%>">view content</a></button>
+          
           </p></article>
-          <a class="btn btn-blog pull-right marginBottom10" href="/posts/<%=post._id%>">Read More</a>
        </div>
+      </div>
+      <br>
     <% }) %>
-
+  </div>
 
 <%- include("partials/footer"); -%>
