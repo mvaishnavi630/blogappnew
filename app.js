@@ -41,11 +41,13 @@ next();
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://mvaishu:mern@cluster0.3oubr.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://mvaishu:mern@cluster0.7xe68.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true,useUnifiedTopology: true});
 
 const postSchema = {
   title: String,
-  content: String
+  content: String,
+  username:String,
+  userid:String
 };
 
 const User = require("./models/user");
@@ -71,7 +73,9 @@ app.get("/compose",ensureAuthenticated, function(req, res){
 app.post("/compose",ensureAuthenticated, function(req, res){
   const post = new Post({
     title: req.body.postTitle,
-    content: req.body.postBody
+    content: req.body.postBody,
+    username:req.user.name,
+    userid:req.user
   });
 
 
@@ -90,6 +94,8 @@ const requestedPostId = req.params.postId;
     res.render("post", {
       title: post.title,
       content: post.content,
+      userofpost:post.username,
+      useridofpost:post.userid,
       user:req.user
     });
   });
@@ -113,6 +119,17 @@ app.get('/login',(req,res)=>{
 app.get('/register',(req,res)=>{
   res.render('register')
   })
+
+  app.get('/profile/:profileID',ensureAuthenticated,(req,res)=>{
+    const requestedProfileId = req.params.profileID;
+    User.findOne({name: requestedProfileId}, function(err, user){
+      res.render("profile", {
+        user:user
+      });
+    });
+})
+
+
 
   app.get('/profile',ensureAuthenticated,(req,res)=>{
     res.render('profile',{
@@ -209,4 +226,3 @@ if(port=="" || port==null)
 app.listen(port, function() {
   console.log("Server started on port 3000");
 });
-

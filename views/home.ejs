@@ -29,9 +29,10 @@
     <h1>Home of <%=user.name%> </h1>
   <%  posts.forEach(function(post){ %>
     <div class="col-md-10 blogShort">
-      <h1><%=post.title%></h1>
+      <h1><%=post.title%>               Created by : <span>  <%=post.username%> </span> </h1> 
           <article><p>
             <%=post.content.substring(0, 100) + " ..."%>
+           
           </p></article>
           <a class="btn btn-blog pull-right marginBottom10" href="/posts/<%=post._id%>">Read More</a>
        </div>
