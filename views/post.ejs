@@ -7,6 +7,24 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 40%;
+      
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container1 {
+      padding: 2px 16px;
+    }
+    </style>
+
+
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -25,12 +43,23 @@
 
   <body>
     <div class="container">
-
-  <h1><%=title%></h1>
-  <p><%=content%></p>
-<h2>CREATED BY </h2>
-  <h1><a class="btn btn-blog pull-right marginBottom10" href="/profile/<%=userofpost%>"><%=userofpost%></a></h1>
-
+      <div class="card">
+        <div class="container1">
+          <br>
+          <button type="button" class="btn btn-warning">Title : </button> &nbsp;&nbsp;<button type="button" class="btn btn-light"><%=title%></button>
+        <br>
+        <article><p>
+          <br>
+        <button type="button" class="btn btn-warning">Blog Created by : </button> &nbsp;&nbsp;<a class="btn btn-info" href="/profile/<%=userofpost%>"><%=userofpost%></a>
+      </p></article>
+      <br>
+            <article><p>
+              <%=content%>
+            </p></article>
+         </div>
+        </div>
+        <br>
+       
 <%- include("partials/footer"); -%>
 
 
