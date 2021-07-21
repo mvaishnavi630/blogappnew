@@ -10,7 +10,7 @@ This is a Node based blogging website .
 
 Users can post their blogs and can  view users blog posts.
 users can view profile of other users.<br />
-[Open Deployed Link](agile-ridge-80367.herokuapp.com/login)<br />
+[Open Deployed Link](http://agile-ridge-80367.herokuapp.com/login)<br />
 
 # Features and Functionalities
 * User Authentication 
