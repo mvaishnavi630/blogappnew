@@ -32,17 +32,7 @@ users can view profile of other users.<br />
 
 
 
-# ScreenShots
-* Main Page
-![Main Page](https://user-images.githubusercontent.com/64028439/126040919-aef7ca42-dcd3-4bbe-b6ad-913c0d7e41b9.png)
-* Login Page
-![Loginpage](https://user-images.githubusercontent.com/64028439/126040926-ff4e8eba-45b5-4af0-b222-8b9c132f378e.png)
-* myFeed Page
-![myFeedpage](https://user-images.githubusercontent.com/64028439/126041609-e4ead8aa-b615-4bea-ac9f-dfd3003de199.jpeg)
-* myProfile Page
-![myProgilePage](https://user-images.githubusercontent.com/64028439/126041743-f902886f-8e63-483b-b51d-d09d5d96dec2.jpeg)
-* myPosts Page
-![myPostsPage](https://user-images.githubusercontent.com/64028439/126041812-145f23ae-4301-420d-9254-591e12539786.jpeg)
+
 
 # Getting Started
 * clone this repo
