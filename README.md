@@ -8,7 +8,7 @@
 
 This is a Node based blogging website .
 
-Users can post their blogs and can  view users blog posts.
+Users can post their blogs and blog about anything and even promote their products or blog about day to day activities and can view other users blog posts and their user profile and get theur email to contact them.
 users can view profile of other users.<br />
 [Open Deployed Link](http://agile-ridge-80367.herokuapp.com/login)<br />
 
