@@ -34,6 +34,8 @@ Users can post their blogs and blog about anything and even promote their produc
 ![myFeedpage](https://i.postimg.cc/50Y5drpq/Screenshot-34.png)
 * Compose blog Page
 ![Main Page](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+* Profile Page
+![Main Page](https://i.postimg.cc/pVgm6TgS/Screenshot-35.png)
 
 
 
