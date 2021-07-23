@@ -27,13 +27,13 @@ Users can post their blogs and blog about anything and even promote their produc
 * Home Page
 ![Main Page](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
 * Login Page
-![Loginpage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+![Loginpage](https://i.postimg.cc/nr9DgQFd/Screenshot-10.png)
 * Register Page
-![myFeedpage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+![myFeedpage](https://i.postimg.cc/50Y5drpq/Screenshot-34.png)
 * Profile Page
-![myProgilePage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+![myProgilePage](https://i.postimg.cc/sD9Yr7P8/Screenshot-33.png)
 * myPosts Page
-![myPostsPage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+![myPostsPage](https://i.postimg.cc/mkW9xgPB/Screenshot-28.png)
 
 
 
