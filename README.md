@@ -23,7 +23,17 @@ Users can post their blogs and blog about anything and even promote their produc
 * Click on Logout button to logout.
 * Click on ur name it will direct you to ur profile page.
 
-
+# ScreenShots
+* Home Page
+![Main Page](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+* Login Page
+![Loginpage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+* Register Page
+![myFeedpage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+* Profile Page
+![myProgilePage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
+* myPosts Page
+![myPostsPage](https://i.postimg.cc/sD16fnX8/Screenshot-30.png)
 
 
 
